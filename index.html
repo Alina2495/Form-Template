@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+    <title>Test</title>
+</head>
+<body class="body-main">
+    <div class="body-main__contain">
+        <form class="form" method="GET" action="#">
+            <div class="form-heading--group">
+                <h1 class="form-heading--group__title">
+                    Профиль рабочей группы
+                </h1>
+                <legend class="form-heading--group__description">
+                    В данном разделе вы можете посмотреть и отредактировать информацию по своей рабочей группе, настроить права участников, расширить настройки полностью или частично для других рабочих групп, а также сделать полную копию вашей рабочей группы с ограниченным доступом для тонкой настройки без публичных оповещений.
+                </legend>
+                <h3 class="form-heading--group__title--smaller">
+                    Основная информация
+                </h3>
+            </div>
+            <div class="alert-block alert-block--hidden">
+                <b class="alert-block__name">
+                    Внимание!
+                </b>
+                <p class="alert-block__description">
+                    Ваши данные сохранены в браузере, но не отправлены на сервер. Нажмите кнопку “Отправить”, чтобы завершить редактирование.
+                </p>
+            </div>
+            <div class="form__input-group__contain--column">
+                <fieldset class="fieldset-group--global-style input--size">
+                    <input class="form__input" type="text" id="name-group" placeholder="Введите название группы" spellcheck="false" required>
+                    <label class="form__input-label" for="name-group">
+                        Название группы
+                    </label>
+                </fieldset>
+                <fieldset class="fieldset-group--global-style input--size">
+                    <input class="form__input" type="tel" id="representative-phone" placeholder="+7 (XXX) XXX-XX-XX" spellcheck="false" required>
+                    <label class="form__input-label" for="representative-phone">
+                        Телефон представителя
+                    </label>
+                </fieldset>
+                <fieldset class="fieldset-group--global-style input--size">
+                    <input class="form__input" type="text" id="alias" placeholder="Алиас" spellcheck="false" required>
+                    <label class="form__input-label" for="alias">
+                        Алиас
+                    </label>
+                </fieldset>
+                <fieldset class="fieldset-group--global-style input--size">
+                    <input class="form__input" type="text" id="representative-initials" placeholder="Введите полные данные представителя" spellcheck="false" required>
+                    <label class="form__input-label" for="representative-initials">
+                        ФИО представителя
+                    </label>
+                </fieldset>
+                <fieldset class="fieldset-group--global-style input--size">
+                    <input class="form__input" type="email" id="mail-appeals" placeholder="Введите адрес электронной почты" spellcheck="false" required>
+                    <label class="form__input-label" for="mail-appeals">
+                        Электронная почта для обращений
+                    </label>
+                </fieldset>
+                <fieldset class="fieldset-group--global-style input--size">
+                    <input class="form__input" type="text" id="responsible-post" placeholder="Введите полное наименование должности" spellcheck="false" required>
+                    <label class="form__input-label" for="responsible-post">
+                        Должность ответственного
+                    </label>
+                </fieldset>
+            </div>
+            <div class="form__textarea-group--contain">
+                <fieldset class="fieldset-group--global-style textarea--size">
+                    <textarea id="internal-description" class="form__input form__textarea--size form__textarea--padding" placeholder="Введите краткое и емкое описание" spellcheck="false" required></textarea>
+                    <label class="form__input-label" for="internal-description">
+                        Описание рабочей группы для внутреннего использования
+                    </label>
+                </fieldset>
+                <fieldset class="fieldset-group--checkbox">
+                    <input class="form__checkbox-input" type="checkbox" id="form--checkbox">
+                    <label class="form__checkbox-label" for="form--checkbox">
+                        Публичное описание отличается от внутреннего
+                    </label>
+                </fieldset>
+                <fieldset class="fieldset-group--global-style textarea--size">
+                    <textarea id="public-description" class="form__input form__textarea--size" placeholder="Введите краткое и емкое описание" spellcheck="false" required></textarea>
+                    <label class="form__input-label" for="public-description">
+                        Публичное описание отличается от внутреннего
+                    </label>
+                </fieldset>                    
+            </div>
+            <div class="form__button--group">
+                <button class="form__btn form__btn-send" type="submit">
+                    Отправить на модерацию
+                </button>
+                <button class="form__btn form__btn-reset" type="reset">
+                    Отмена
+                </button>
+                <button class="form__btn form__btn-saved" type="submit">
+                    Сохранить в мои черновики
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
